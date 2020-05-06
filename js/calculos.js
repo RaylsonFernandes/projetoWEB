@@ -1,3 +1,4 @@
+//Questão 1
 function mediaFinal(){
 	var nome = form_mediaFinal.nome.value;
 	
@@ -21,6 +22,7 @@ function mediaFinal(){
 
 }
 
+//Questão 2
 function carne(){
 	var nome = form_carne.nome.value;
 	var produto = form_carne.produto.value;
@@ -48,6 +50,50 @@ function carne(){
 		"<br>Parcela 1/" + parcela + "<br>"+ 
 		"--------------------------------------------------------------------------------------------"
 		);
-		
-	
+}
+
+//Questão 4
+function imc(){
+	var nome = form_imc.nome.value;
+	var peso = form_imc.peso.value;
+	var altura = form_imc.altura.value;
+
+	var imc = parseFloat(peso) / (parseFloat(altura) * parseFloat(altura));
+
+	$('#resultImc').append(
+		"--------------------------------------------------------------------------------------------" + 
+		"<br><b>RESULTADO - IMC</b><br>" + 
+		"<b>PACIENTE: </b>" + nome.toUpperCase() + 
+		"<br><b>PESO: </b>" + peso + "KG" + 
+		"<br><b>ALTURA: </b>" + altura + 
+		"<br><b>IMC: </b>" + imc + "<br>"
+		);
+
+	if (imc < 18.5) {
+		var nivel = "baixo peso";
+		var msg = "Peso baixo para a altura. Maior probabilidade de anorexia.";
+	}else if (imc < 24.9) {
+		var nivel = "peso normal";
+		var msg = "Maior probabilidade de ser um indivíduo saudável.";
+	}else if (imc < 29.9) {
+		var nivel = "pré-obesidade";
+		var msg = "Alguma probabilidade de problemas de saúde. Predisposição a tornar-se obeso.";
+	}else if (imc < 34.9) {
+		var nivel = "obesidade grau I";
+		var msg = "Risco moderado de diabetes tipo II, hipertensão, colestrerol, cardiopatia.";
+	}else if (imc < 39.9) {
+		var nivel = "obesidade grau II";
+		var msg = "Risco grave. Aumenta o risco das doenças associadas. O risco de mortalidade aumenta 50%.";
+	}else if (imc > 40) {
+		var nivel = "obesidade grau III ou obesidade móbida";
+		var msg = "Risco muito grave. O risco das doenças associadas assim como mortalidade aumenta 90%.";
+	}
+
+	$('#msgImc').append(
+			"Olá " + nome.toUpperCase() + ", você está no nível de obesidade: <b>"
+			+ nivel + "</b>. <br>" +
+			"Com este nível de IMC você está propenso a apresentar os seguintes problemas de saúde:"
+			+ msg + "<br>" + 
+			"--------------------------------------------------------------------------------------------"
+			);
 }
