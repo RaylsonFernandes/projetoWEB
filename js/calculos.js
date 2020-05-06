@@ -46,7 +46,7 @@ function carne(){
 		"<br><b>LOJA DE ELETRODOMÉSTICOS</b><br>" + 
 		"<b>CLIENTE: </b>" + nome.toUpperCase() + 
 		"<br><b>PRODUTO: </b>" + produto.toUpperCase() + 
-		"<br><b>VALOR: </b>" + valorParcela + 
+		"<br><b>VALOR: </b>R$" + valorParcela + 
 		"<br>Parcela 1/" + parcela + "<br>"+ 
 		"--------------------------------------------------------------------------------------------"
 		);
