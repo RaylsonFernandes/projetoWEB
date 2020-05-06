@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title></title>
 
 	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
@@ -24,9 +25,10 @@
       </div></li>
       <li><a href="#!">Início</a></li>
       <li><div class="divider"></div></li>
-      <li><a href="questao/questao1.html">Questão 1</a></li>
-      <li><a href="questao/questao2.html">Questão 2</a></li>
-      <li><a href="questao/questao3.html">Questão 3</a></li>
+      <li><a href="questao1.html">Questão 1</a></li>
+      <li><a href="questao2.html">Questão 2</a></li>
+      <li><a href="questao3.html">Questão 3</a></li>
+      <li><a href="questao4.html">Questão 4</a></li>
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger">
       <i class="medium material-icons">menu</i>
@@ -71,9 +73,9 @@
         </div>
   </div>
   <div class="row">
-  	<form class="col s12" name="form_mediaFinal" id="form_mediaFinal">
+  	<form name="form_mediaFinal" id="form_mediaFinal">
         	<div class="row">
-        		<div class="input-field col s6">
+        		<div class="input-field col s12">
 		          <input placeholder="Nome Completo" name="nome" id="nome" type="text" class="validate">
 		          <label for="first_name">Nome</label>
 		        </div>
@@ -81,12 +83,12 @@
 		          <input placeholder="Diciplina" name="diciplina" id="diciplina" type="text" class="validate">
 		          <label for="first_name">Diciplina</label>
 		        </div>
-		        <div class="input-field col s6">
-		          <input placeholder="Nota 1" name="nota1" id="nota1" type="text" class="validate">
+		        <div class="input-field col s3">
+		          <input placeholder="Nota 1" name="nota1" id="nota1" type="number" class="validate">
 		          <label for="first_name">Nota 1</label>
 		        </div>
-		        <div class="input-field col s6">
-		          <input placeholder="Nota 2" name="nota2" id="nota2" type="text" class="validate">
+		        <div class="input-field col s3">
+		          <input placeholder="Nota 2" name="nota2" id="nota2" type="number" class="validate">
 		          <label for="first_name">Nota 2</label>
 		        </div>
         	</div>
@@ -96,25 +98,25 @@
         	</button>
     </form>
   </div>
-  <p id="mediaFinal"></p>
+  <p id="msgFinal"></p>
 
 
   <footer class="page-footer blue">
           <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <a href="https://github.com/RaylsonFernandes/projetoWEB">
-                  <img src="../img/github.png" width="50" height="50">
-                </a>
+            <center>
+              <div class="row">
+                  <a href="https://github.com/RaylsonFernandes/projetoWEB">
+                    <img src="../img/github.png" width="50" height="50">
+                  </a>
               </div>
-            </div>
+            </center>
           </div>
           <div class="footer-copyright">
             <div class="container">
             © 2020 All copyrights reserved
             </div>
           </div>
-        </footer>
+  </footer>
 
 
 
