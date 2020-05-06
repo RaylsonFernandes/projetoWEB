@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script type="text/javascript" src="../js/calculos.js"></script>
+	
+</head>
+<body>
+  
+  <header class="page-header">
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="../img/fundo.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="../img/perfil.jpg"></a>
+        <a href="#name"><span class="white-text name">Raylson fernandes</span></a>
+        <a href="#email"><span class="white-text email">Raylsonfernandes1994@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!">Início</a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="questao/questao1.html">Questão 1</a></li>
+      <li><a href="questao/questao2.html">Questão 2</a></li>
+      <li><a href="questao/questao3.html">Questão 3</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger">
+      <i class="medium material-icons">menu</i>
+    </a>
+    
+  </header>
+  
+  <center><h2>Cálculo de média</h2></center>
+  	
+ 
+  <div class="row">
+  		<div class="col s3">
+  			<p> </p>
+  		</div>
+        <div class="col s6">
+        	<table>
+        		<thead>
+		          <tr>
+		              <th>MÉDIA ARITIMÉTICA</th>
+		              <th>SITUAÇÃO</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		              <td><= 3</td>
+		              <td>Reprovado</td>
+		          </tr>
+		        </tbody>
+		        <tbody>
+		          <tr>
+		              <td>> 3 e < 7</td>
+		              <td>Recuperação</td>
+		          </tr>
+		        </tbody>
+		        <tbody>
+		          <tr>
+		              <td>>= 7</td>
+		              <td>Aprovado</td>
+		          </tr>
+		        </tbody>
+        	</table>
+        </div>
+  </div>
+  <div class="row">
+  	<form class="col s12" name="form_mediaFinal" id="form_mediaFinal">
+        	<div class="row">
+        		<div class="input-field col s6">
+		          <input placeholder="Nome Completo" name="nome" id="nome" type="text" class="validate">
+		          <label for="first_name">Nome</label>
+		        </div>
+        		<div class="input-field col s6">
+		          <input placeholder="Diciplina" name="diciplina" id="diciplina" type="text" class="validate">
+		          <label for="first_name">Diciplina</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input placeholder="Nota 1" name="nota1" id="nota1" type="text" class="validate">
+		          <label for="first_name">Nota 1</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input placeholder="Nota 2" name="nota2" id="nota2" type="text" class="validate">
+		          <label for="first_name">Nota 2</label>
+		        </div>
+        	</div>
+
+        	<button onclick="mediaFinal()" class="btn waves-effect waves-light" type="submit" name="action">
+        		Calcular
+        	</button>
+    </form>
+  </div>
+  <p id="mediaFinal"></p>
+
+
+  <footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <a href="https://github.com/RaylsonFernandes/projetoWEB">
+                  <img src="../img/github.png" width="50" height="50">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 All copyrights reserved
+            </div>
+          </div>
+        </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="../js/materialize.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+
+
+</body>
+</html>
