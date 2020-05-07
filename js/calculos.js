@@ -32,7 +32,7 @@ function carne(){
 
 	preco = parseFloat(preco)	 * parseFloat(qtd);
 
-	if (parcela >= 3) {
+	if (parcela >= 3 && parcela < 6) {
 		var valorTotal = parseFloat(preco) + (parseFloat(preco) * 0.05);
 	}else if (parcela == 6) {
 		var valorTotal = parseFloat(preco) + (parseFloat(preco) * 0.12);
